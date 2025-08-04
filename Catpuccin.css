@@ -1,0 +1,77 @@
+﻿/* Credits */
+/**
+ * @name Catpuccin
+ * @author Carl00710
+ * @version 0.1.0
+ * @description A theme as cozy as a cup of coffee~
+ * @source I made it the fuck up
+*/
+
+/* --------------------- @IMPORTS ----------------------*/
+@import url("https://catppuccin.github.io/discord/dist/catppuccin-mocha-maroon.theme.css"); /* Catpuccin Mocha (+ Maroon) */
+// @import url("https://aushevahmad.github.io/awesome-css/modules/hiddenthreads.css"); /* Hidden Threads until hovering */
+@import url("https://minidiscordthemes.github.io/Snippets/ForumImprovements/main.css"); /* Improves Forums UI because it's janky */
+
+/* ---------------- BOTTOMLEFT PROFILE STUFF    --------*/
+    /*Make it rounded*/
+[class^="sidebar_"] [class^="panels_"] {
+    margin-right: 5px;
+    margin-bottom: -4px;
+    margin-left: 5px;
+    border-radius: 10px !important;
+}
+
+[class^="sidebar_"] [class^="panels_"] [class^="container_"], [class^="sidebar_"] [class^="panels_"] [class^="panel_"] {
+    background-color: transparent !important;
+ }
+
+#vc-spotify-player {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    /* Move Mute, Deafen, Settings 3px to the left*/
+.buttons__37e49, .micButtonParent__37e49 {
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+
+/* ------------ CHAT AND MEMBER LIST ------------------*/
+.page_c48ade {
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-bottom: -3px;
+    margin-top: -3px;
+}
+
+/* ---------------- TEXTBOX STUFF   -------------------*/
+    /* Hide Apps, Send a Gift*/
+.button_e6e74f { /*App launcher*/
+    display: none;
+}
+div[aria-label="Send a gift"] { /* Gift button*/
+    display: none;
+}
+
+    /* Make a wierd dark box invisible*/
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+    background-color: transparent;
+}
+
+/* ---------------      OTHER       -------------------*/
+    /* Rounded Chat+Member List */
+.chat_f75fb0, .sidebar_c48ade{
+    margin-right: 8px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-radius: 10px !important;
+
+}
+    /* Hide Stuff*/
+.root__4ad81/*Alone in VC*/, .upsellContainer__0b69f /*Voice Filter Nitro*/, .recentsIcon_c99c29 /*Inbox*/, .button__85643.iconWrapper__9293f /*Help*/{
+    display: none;
+}
+[href="/store"] { /* Actually the Nitro button*/
+  display: none;
+}
