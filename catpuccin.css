@@ -36,7 +36,6 @@
     margin-right: -3px;
 }
 
-
 /* ------------ CHAT AND MEMBER LIST ------------------*/
 .page_c48ade {
     margin-left: -3px;
@@ -44,21 +43,6 @@
     margin-bottom: -3px;
     margin-top: -3px;
 }
-
-/* ---------------- TEXTBOX STUFF   -------------------*/
-    /* Hide Apps, Send a Gift*/
-.button_e6e74f { /*App launcher*/
-    display: none;
-}
-div[aria-label="Send a gift"] { /* Gift button*/
-    display: none;
-}
-
-    /* Make a wierd dark box invisible*/
-.form_f75fb0.formWithLoadedChatInput_f75fb0 {
-    background-color: transparent;
-}
-
 /* ---------------      OTHER       -------------------*/
     /* Rounded Chat+Member List */
 .chat_f75fb0, .sidebar_c48ade{
@@ -68,10 +52,18 @@ div[aria-label="Send a gift"] { /* Gift button*/
     border-radius: 10px !important;
 
 }
-    /* Hide Stuff*/
-.root__4ad81/*Alone in VC*/, .upsellContainer__0b69f /*Voice Filter Nitro*/, .recentsIcon_c99c29 /*Inbox*/, .button__85643.iconWrapper__9293f /*Help*/{
+
+
+.root__4ad81/*Alone in VC*/,
+[class="trailing_c38106"]/*top right items*/,
+[href="/store"]/*DM Page, Nitro tab*/,
+[aria-label="Apps"]/*textbox, App Launcher*/,
+[aria-label="Send a gift"]/*textbox, gift nitro*/,
+[aria-label="Open sticker picker"]/*textbox, stickers*/,
+[aria-label="Discover"]/*server list*/,
+[class="wrapper__42d45 theme-midnight"]/*DM page>quests, featured banner*/,
+[class="searchBar_e6b769"]/*DM page, Ctrl+K searchbox (key combo still works)*/,
+[class="container_b5b7aa"]/*Quest, all banners*/
+{
     display: none;
-}
-[href="/store"] { /* Actually the Nitro button*/
-  display: none;
 }
